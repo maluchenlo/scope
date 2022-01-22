@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    padding: 20px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+h2 {
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.gridAreas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "menu             menu"
+        "tituloIntro      ilustracionIntro"
+        "textoIntro       ilustracionIntro"
+        "banner           banner"
+        "tituloLogos      tituloLogos"
+        "parteFooter      parteFooter";
+}
+
+.gridAreas .menu {
+    grid-area: menu;
+}
+
+.gridAreas .tituloIntro {
+    grid-area: tituloIntro;
+    background-color: rgb(238, 234, 234);
+    padding: 70px 50px 0px 50px;
+}
+
+.gridAreas .textoIntro {
+    grid-area: textoIntro;
+    background-color: rgb(238, 234, 234);
+    padding: 0px 50px 50px 50px;
+}
+
+.gridAreas .ilustracionIntro {
+    grid-area: ilustracionIntro;
+    background-color: rgb(238, 234, 234);
+    padding: 70px 50px 50px 50px;
+}
+
+.gridAreas .banner {
+    grid-area: banner;
+}
+
+#bannerTexto {
+    color: cornsilk;
+    font-size: 25px;
+    text-align: center;
+    background-color: #6536FD;
+    padding: 50px;
+    border: 0px;
+    margin: 0px;
+}
+
+.boton {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gridAreas .tituloLogos {
+    grid-area: tituloLogos;
+}
+
+.tituloLogos {
+    padding: 50px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.gridAreas .parteFooter {
+    grid-area: parteFooter;
+}
+
+.parteFooter {
+    background-color: black;
+    height: 200px;
+    margin-bottom: 0%;
+}
+
+@media screen and (min-width: 780px){
+    .gridAreas {
+        grid-template-areas: 
+            "menu"
+            "tituloIntro"
+            "textoIntro"
+            "banner"
+            "tituloLogos"
+            "parteFooter";
+    }
+}
+
+.gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 20px;
+    padding: 50px 50px 70px 50px;
+    background-color: rgb(238, 234, 234);
+    grid-template-areas:
+        "foto1            foto2            foto3";
+}
+
+.gridPrograma .foto1 {
+    grid-area: foto1;
+}
+
+.gridPrograma .foto2 {
+    grid-area: foto2;
+}
+
+.gridPrograma .foto3 {
+    grid-area: foto3;
+}
+
+.tituloPrograma {
+    background-color: rgb(238, 234, 234);
+    padding: 70px 50px 50px 50px;
+}
+
+.textoPrograma {
+    background-color: rgb(238, 234, 234);
+    padding: 0px 50px 50px 50px;
+}
+
+@media screen and (min-width: 1326px){
+    .gridGaleria {
+        grid grid-template-columns: repeat(3, 2fr);
+        grid-template-areas:
+        "foto1            foto2            foto3";
+}
+
+@media screen and (min-width: 480px){
+    .gridGaleria {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "foto1"            
+            "foto2"            
+            "foto3";
+    }
+}
