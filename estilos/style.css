@@ -53,6 +53,9 @@ h4 {
     padding: 0px 50px 50px 50px;
 }
 
+.gridJurado h4 p {
+    line-height: 16px;
+}
 .banner {
     background-color: #6536FD;
     padding: 50px;
@@ -90,9 +93,7 @@ h4 {
 }
 
 .formulario {
-    {
         padding: 50px 50px 50px 50px;
-    }
 }
 
 .parteFooter {

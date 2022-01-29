@@ -31,7 +31,7 @@
     <!-- INTRO -->
     <main class="titulo">
         <div data-aos="fade-right">
-            <h2>Convocatoria</h2>
+            <h2>La Convocatoria</h2>
         </div>
     </main>
     <section class="texto">
@@ -55,27 +55,27 @@
     </div>
         <div class="foto1">
             <img src="../imagenes/Jordi Sellas.jfif" alt="Jordi Sellas">
-            <h4>Jordi Sellas i Ferrés</h4><br>
+            <h4>Jordi Sellas i Ferrés</h4>
             <p>Executive Director IDEAL Barcelona | Digital Arts Center</p>
         </div>
         <div class="foto2">
             <img src="../imagenes/Marisol Lopez.jfif" alt="Marisol López">
-            <h4>Marisol López</h4><br>
+            <h4>Marisol López</h4>
             <p>Directora General de Innovació y Cultura Digital en Departament de Cultura</p> 
         </div>
         <div class="foto3">
             <img src="../imagenes/Ferran Esteve.jfif" alt="Ferran Esteve">
-            <h4>Ferran Esteve</h4><br>
+            <h4>Ferran Esteve</h4>
             <p>Lead de Innovación & Transformación Digital Oxam Interfom</p>
         </div>
         <div class="foto4">
             <img src="../imagenes/Olga Sevillano.jfif" alt="Olga Sevillano Pintado">
-            <h4>Olga Sevillano Pintado</h4><br>
+            <h4>Olga Sevillano Pintado</h4>
             <p>Responsable Programas Virtuales del Museo Reina Sofía</p>
         </div>
         <div class="foto5">
             <img src="../imagenes/Sergi Noe.jfif" alt="Sergi Noe">
-            <h4>Sergi Noe</h4><br>
+            <h4>Sergi Noe</h4>
             <p>Fundador de Culture People </p>
         </div>
     </section>
@@ -90,14 +90,83 @@
 
     <!-- Formulario -->
     <section class="formulario">
-        <div>
-            <h2>Formulario</h2>
+            <h2>Formulario de participación</h2>
             <br>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Comments</label>
-              </div>
-        </div>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">Proyecto</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Web</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Tel</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                </div>
+                  
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Explica por qué quieres participar en la convocatoria y selecciona las herramientas que te interesan.</label>
+                  </div>
+
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Canva</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Mailchimp</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Asana</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Zoom</label>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Adjunta tu dossier</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Acepto las bases de participación
+                      </label>
+                      <div class="invalid-feedback">
+                        Debes aceptar las bases antes de enviar el formulario.
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
+              
     </section>
 
     <!-- Footer -->
