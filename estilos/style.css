@@ -40,7 +40,17 @@ h4 {
     font-size: 25px;
     font-weight: bold;
     text-decoration: underline;
-    text-align: right;
+    text-align: left;
+}
+
+.titulo {
+    background-color: rgb(238, 234, 234);
+    padding: 70px 50px 50px 50px;
+}
+
+.texto {
+    background-color: rgb(238, 234, 234);
+    padding: 0px 50px 50px 50px;
 }
 
 .banner {
@@ -66,24 +76,37 @@ h4 {
 
 .boton:hover {
     color: #fff;
-    background: #060520; /* color de fuente hover */
-  }
+    background: #060520;
+}
 
+.tituloLogos {
+    padding: 50px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.formulario {
+    {
+        padding: 50px 50px 50px 50px;
+    }
+}
+
+.parteFooter {
+    background-color: black;
+    height: 200px;
+    margin-bottom: 0%;
+}
 
 .gridAreas {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "menu             menu"
+    grid-template-areas:
         "tituloIntro      ilustracionIntro"
-        "textoIntro       ilustracionIntro"
-        "banner           banner"
-        "tituloLogos      tituloLogos"
-        "parteFooter      parteFooter";
-}
-
-.gridAreas .menu {
-    grid-area: menu;
+        "textoIntro       ilustracionIntro";
 }
 
 .gridAreas .tituloIntro {
@@ -102,54 +125,6 @@ h4 {
     grid-area: ilustracionIntro;
     background-color: rgb(238, 234, 234);
     padding: 70px 50px 50px 50px;
-}
-
-.gridAreas .banner {
-    grid-area: banner;
-}
-
-.gridAreas .tituloLogos {
-    grid-area: tituloLogos;
-}
-
-.tituloLogos {
-    padding: 50px;
-}
-
-.logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
-
-.gridAreas .parteFooter {
-    grid-area: parteFooter;
-}
-
-.parteFooter {
-    background-color: black;
-    height: 200px;
-    margin-bottom: 0%;
-}
-
-@media screen and (max-width: 480px){
-    .gridAreas {
-        grid-template-areas: 
-            "menu"
-            "tituloIntro"
-            "textoIntro"
-            "ilustracionIntro"
-            "banner"
-            "tituloLogos"
-            "parteFooter";
-    }
-
-    .logos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between
-    }
-
 }
 
 .gridGaleria {
@@ -174,28 +149,81 @@ h4 {
     grid-area: foto3;
 }
 
-.tituloPrograma {
+.gridJurado {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: repeat(5, 2fr);
+    column-gap: 25px;
+    padding: 50px 50px 70px 50px;
     background-color: rgb(238, 234, 234);
-    padding: 70px 50px 50px 50px;
+    grid-template-areas:
+        "tituloJurado tituloJurado tituloJurado tituloJurado tituloJurado"
+        "foto1        foto2        foto3        foto4        foto5";
 }
 
-.textoPrograma {
-    background-color: rgb(238, 234, 234);
-    padding: 0px 50px 50px 50px;
+.gridJurado .tituloJurado {
+    grid-area: tituloJurado;
 }
 
-@media screen and (max-width: 480px){
-    .gridGaleria {
+.gridJurado .foto1 {
+    grid-area: foto1;
+}
+
+.gridJurado .foto2 {
+    grid-area: foto2;
+}
+
+.gridJurado .foto3 {
+    grid-area: foto3;
+}
+
+.gridJurado .foto4 {
+    grid-area: foto4;
+}
+
+.gridJurado .foto5 {
+    grid-area: foto5;
+}
+
+@media screen and (max-width: 480px) {
+    .gridAreas {
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "foto1"            
-            "foto2"            
-            "foto3";
+            "tituloIntro"
+            "textoIntro"
+            "ilustracionIntro"
     }
 
     .logos {
         display: flex;
         flex-direction: column;
         justify-content: space-between
+    }
+
+    .boton {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridGaleria {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3";
+
+    }
+
+    .gridJurado {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "tituloJurado"
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5";
     }
 
 }
