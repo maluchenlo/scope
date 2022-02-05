@@ -1,25 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-
-}
-
-img {
-    max-width: 100%;
-}
-
-li {
-    padding: 20px;
-    margin-top: 25px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    display: inline-block;
-}
+@import "generales";
 
 h2 {
     font-style: normal;
@@ -46,6 +25,7 @@ h4 {
 .titulo {
     background-color: rgb(238, 234, 234);
     padding: 70px 50px 50px 50px;
+    font-style: normal;
 }
 
 .texto {
@@ -78,7 +58,7 @@ h4 {
 }
 
 .boton:hover {
-    color: #fff;
+    color: rgb(255, 255, 255);
     background: #060520;
 }
 
@@ -93,7 +73,10 @@ h4 {
 }
 
 .formulario {
-        padding: 50px 50px 50px 50px;
+        padding: 50px;
+        h2{
+            font-style: normal;
+        }
 }
 
 .parteFooter {
@@ -186,7 +169,7 @@ h4 {
     grid-area: foto5;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     .gridAreas {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -204,6 +187,7 @@ h4 {
     .boton {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .gridGaleria {
