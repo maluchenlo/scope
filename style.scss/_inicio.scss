@@ -1,3 +1,19 @@
+
+.tituloIntro {
+    background-color: rgb(238, 234, 234);
+    padding: 70px 50px 0px 70px;
+}
+
+.textoIntro {
+    background-color: rgb(238, 234, 234);
+    padding: 0px 50px 70px 70px;
+}
+
+.ilustracionIntro {
+    background-color: rgb(238, 234, 234);
+    padding: 70px 70px 70px 50px;
+}
+
 .gridAreas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,20 +24,14 @@
 
 .gridAreas .tituloIntro {
     grid-area: tituloIntro;
-    background-color: rgb(238, 234, 234);
-    padding: 70px 50px 0px 70px;
 }
 
 .gridAreas .textoIntro {
     grid-area: textoIntro;
-    background-color: rgb(238, 234, 234);
-    padding: 0px 50px 70px 70px;
 }
 
 .gridAreas .ilustracionIntro {
     grid-area: ilustracionIntro;
-    background-color: rgb(238, 234, 234);
-    padding: 70px 70px 70px 50px;
 }
 
 .banner {

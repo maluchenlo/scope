@@ -46,6 +46,21 @@ h3 {
   font-weight: lighter;
 }
 
+.tituloIntro {
+  background-color: #eeeaea;
+  padding: 70px 50px 0px 70px;
+}
+
+.textoIntro {
+  background-color: #eeeaea;
+  padding: 0px 50px 70px 70px;
+}
+
+.ilustracionIntro {
+  background-color: #eeeaea;
+  padding: 70px 70px 70px 50px;
+}
+
 .gridAreas {
   display: -ms-grid;
   display: grid;
@@ -58,16 +73,12 @@ h3 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tituloIntro;
-  background-color: #eeeaea;
-  padding: 70px 50px 0px 70px;
 }
 
 .gridAreas .textoIntro {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: textoIntro;
-  background-color: #eeeaea;
-  padding: 0px 50px 70px 70px;
 }
 
 .gridAreas .ilustracionIntro {
@@ -75,8 +86,6 @@ h3 {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: ilustracionIntro;
-  background-color: #eeeaea;
-  padding: 70px 70px 70px 50px;
 }
 
 .banner {
@@ -235,12 +244,20 @@ h4 {
 
 .ilustracionMision {
   max-width: 60%;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 576px) {
   nav li {
     padding: 0px;
     margin: 0px;
+  }
+  .ilustracionIntro {
+    padding: 0px 70px 70px 70px;
+  }
+  .ilustracionMision {
+    max-width: 100%;
+    margin-top: 30px;
   }
   .gridAreas {
     -ms-grid-columns: 1fr;
@@ -292,6 +309,13 @@ h4 {
   nav li {
     padding: 0px;
     margin: 0px;
+  }
+  .ilustracionIntro {
+    padding: 0px 70px 70px 70px;
+  }
+  .ilustracionMision {
+    max-width: 100%;
+    margin-top: 30px;
   }
   .gridAreas {
     -ms-grid-columns: 1fr;
