@@ -1,0 +1,29 @@
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 20px;
+    padding: 10px 70px 70px 70px;
+    background-color: rgb(238, 234, 234);
+    grid-template-areas:
+        "foto1            foto2            foto3";
+}
+
+.gridGaleria .foto1 {
+    grid-area: foto1;
+}
+
+.gridGaleria .foto2 {
+    grid-area: foto2;
+}
+
+.gridGaleria .foto3 {
+    grid-area: foto3;
+}

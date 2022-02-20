@@ -1,0 +1,46 @@
+.gridJurado h4 p {
+    line-height: 16px;
+}
+
+.formulario {
+    padding: 70px;
+    h2 {
+        font-style: normal;
+    }
+}
+
+.gridJurado {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: repeat(5, 2fr);
+    column-gap: 25px;
+    padding: 10px 70px 70px 70px;
+    background-color: rgb(238, 234, 234);
+    grid-template-areas:
+        "tituloJurado tituloJurado tituloJurado tituloJurado tituloJurado"
+        "foto1        foto2        foto3        foto4        foto5";
+}
+
+.gridJurado .tituloJurado {
+    grid-area: tituloJurado;
+}
+
+.gridJurado .foto1 {
+    grid-area: foto1;
+}
+
+.gridJurado .foto2 {
+    grid-area: foto2;
+}
+
+.gridJurado .foto3 {
+    grid-area: foto3;
+}
+
+.gridJurado .foto4 {
+    grid-area: foto4;
+}
+
+.gridJurado .foto5 {
+    grid-area: foto5;
+}

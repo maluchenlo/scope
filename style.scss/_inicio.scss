@@ -1,0 +1,73 @@
+.gridAreas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "tituloIntro      ilustracionIntro"
+        "textoIntro       ilustracionIntro";
+}
+
+.gridAreas .tituloIntro {
+    grid-area: tituloIntro;
+    background-color: rgb(238, 234, 234);
+    padding: 70px 50px 0px 70px;
+}
+
+.gridAreas .textoIntro {
+    grid-area: textoIntro;
+    background-color: rgb(238, 234, 234);
+    padding: 0px 50px 70px 70px;
+}
+
+.gridAreas .ilustracionIntro {
+    grid-area: ilustracionIntro;
+    background-color: rgb(238, 234, 234);
+    padding: 70px 70px 70px 50px;
+}
+
+.banner {
+    background-color: #6536FD;
+    padding: 50px;
+
+}
+
+#bannerTexto {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+}
+
+.boton {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.boton:hover {
+    color: rgb(255, 255, 255);
+    background: #060520;
+}
+
+.tituloLogos {
+    padding: 70px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.tool1 {
+padding-right: 20px;
+}
+
+.tool2 {
+    padding-right: 20px;
+    }
+
+.tool3 {
+        padding-right: 20px;
+        }

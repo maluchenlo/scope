@@ -1,168 +1,11 @@
 @import "generales";
+@import "inicio";
+@import "convocatoria";
+@import "programa";
 
-
-h3 {
-    font-style: normal;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: lighter;
-}
-
-h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: underline;
-    text-align: left;
-}
 
 .ilustracionMision {
     max-width: 60%;
-}
-
-.gridJurado h4 p {
-    line-height: 16px;
-}
-
-.banner {
-    background-color: #6536FD;
-    padding: 50px;
-
-}
-
-#bannerTexto {
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    text-align: center;
-}
-
-.boton {
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-
-}
-
-.boton:hover {
-    color: rgb(255, 255, 255);
-    background: #060520;
-}
-
-.tituloLogos {
-    padding: 70px;
-}
-
-.logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
-}
-
-.tool1 {
-padding-right: 20px;
-}
-
-.tool2 {
-    padding-right: 20px;
-    }
-
-.tool3 {
-        padding-right: 20px;
-        }
-
-
-
-.formulario {
-        padding: 70px;
-        h2 {
-            font-style: normal;
-        }
-}
-
-.gridAreas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "tituloIntro      ilustracionIntro"
-        "textoIntro       ilustracionIntro";
-}
-
-.gridAreas .tituloIntro {
-    grid-area: tituloIntro;
-    background-color: rgb(238, 234, 234);
-    padding: 70px 50px 0px 70px;
-}
-
-.gridAreas .textoIntro {
-    grid-area: textoIntro;
-    background-color: rgb(238, 234, 234);
-    padding: 0px 50px 70px 70px;
-}
-
-.gridAreas .ilustracionIntro {
-    grid-area: ilustracionIntro;
-    background-color: rgb(238, 234, 234);
-    padding: 70px 70px 70px 50px;
-}
-
-.gridGaleria {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    column-gap: 20px;
-    padding: 10px 70px 70px 70px;
-    background-color: rgb(238, 234, 234);
-    grid-template-areas:
-        "foto1            foto2            foto3";
-}
-
-.gridGaleria .foto1 {
-    grid-area: foto1;
-}
-
-.gridGaleria .foto2 {
-    grid-area: foto2;
-}
-
-.gridGaleria .foto3 {
-    grid-area: foto3;
-}
-
-.gridJurado {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    grid-template-columns: repeat(5, 2fr);
-    column-gap: 25px;
-    padding: 10px 70px 70px 70px;
-    background-color: rgb(238, 234, 234);
-    grid-template-areas:
-        "tituloJurado tituloJurado tituloJurado tituloJurado tituloJurado"
-        "foto1        foto2        foto3        foto4        foto5";
-}
-
-.gridJurado .tituloJurado {
-    grid-area: tituloJurado;
-}
-
-.gridJurado .foto1 {
-    grid-area: foto1;
-}
-
-.gridJurado .foto2 {
-    grid-area: foto2;
-}
-
-.gridJurado .foto3 {
-    grid-area: foto3;
-}
-
-.gridJurado .foto4 {
-    grid-area: foto4;
-}
-
-.gridJurado .foto5 {
-    grid-area: foto5;
 }
 
 @media screen and (max-width: 576px) {
@@ -217,4 +60,53 @@ padding-right: 20px;
             "foto5";
     }
 
+}
+@media screen and (min-width: 577px) and (max-width: 800px) {
+    
+    nav li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .gridAreas {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "tituloIntro"
+            "textoIntro"
+            "ilustracionIntro"
+    }
+
+    .ilustracionIntro {
+        margin-top: 0px;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gridGaleria {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3";
+
+    }
+
+    .gridJurado {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "tituloJurado tituloJurado tituloJurado"
+            "foto1        foto2        foto3"
+            "foto4         foto5       foto5";
+    }
 }
