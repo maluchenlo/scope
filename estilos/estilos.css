@@ -158,19 +158,19 @@ h3 {
   display: grid;
   -ms-grid-rows: 1fr 3fr;
       grid-template-rows: 1fr 3fr;
-  -ms-grid-columns: (2fr)[5];
-      grid-template-columns: repeat(5, 2fr);
+  -ms-grid-columns: (2fr)[4];
+      grid-template-columns: repeat(4, 2fr);
   -webkit-column-gap: 25px;
           column-gap: 25px;
   padding: 10px 70px 70px 70px;
   background-color: #eeeaea;
-      grid-template-areas: "tituloJurado tituloJurado tituloJurado tituloJurado tituloJurado" "foto1        foto2        foto3        foto4        foto5";
+      grid-template-areas: "tituloJurado tituloJurado tituloJurado tituloJurado" "foto1        foto2        foto3        foto4";
 }
 
 .gridJurado .tituloJurado {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
+  -ms-grid-column-span: 4;
   grid-area: tituloJurado;
 }
 
@@ -196,12 +196,6 @@ h3 {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: foto4;
-}
-
-.gridJurado .foto5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
-  grid-area: foto5;
 }
 
 h4 {
@@ -240,6 +234,85 @@ h4 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: foto3;
+}
+
+.box-uno {
+  background-color: blue;
+  width: 400px;
+  height: 30px;
+}
+
+.box-dos {
+  background-color: green;
+  width: 300px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .ejemplo h2 {
+    font-size: 25px;
+  }
+}
+
+.caja-1 {
+  width: 3em;
+  background-color: black;
+  border: 1px solid red;
+  color: white;
+}
+
+.caja-2 {
+  width: 6em;
+  background-color: black;
+  border: 1px solid red;
+  color: white;
+}
+
+.caja-3 {
+  width: 9em;
+  background-color: black;
+  border: 1px solid red;
+  color: white;
+}
+
+.instagram-icono .instagram-icono {
+  background-image: url("../imagenes/instagram.png");
+  width: 16px;
+  height: 16px;
+}
+
+.facebook-icono .facebook-icono {
+  background-image: url("../imagenes/facebook.png");
+  width: 16px;
+  height: 16px;
+}
+
+.twitter-icono .twitter-icono {
+  background-image: url("../imagenes/twitter.png");
+  width: 16px;
+  height: 16px;
+}
+
+.map {
+  background-color: #3673D9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px;
+}
+
+.redsocial, .redsocial--nueva {
+  border: 1px red solid;
+  background-color: #324e0e;
+}
+
+.redsocial--nueva {
+  font-size: 30px;
+}
+
+.box {
+  height: 50px;
+  width: 500px;
+  background-color: aqua;
 }
 
 .ilustracionMision {
@@ -301,7 +374,7 @@ h4 {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "tituloJurado" "foto1" "foto2" "foto3" "foto4" "foto5";
+        grid-template-areas: "tituloJurado" "foto1" "foto2" "foto3" "foto4";
   }
 }
 
@@ -357,9 +430,9 @@ h4 {
   .gridJurado {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "tituloJurado tituloJurado tituloJurado" "foto1        foto2        foto3" "foto4         foto5       foto5";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "tituloJurado tituloJurado" "foto1        foto2" "foto3        foto4";
   }
 }
 /*# sourceMappingURL=estilos.css.map */

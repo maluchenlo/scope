@@ -1,0 +1,83 @@
+$alto-box:30px;
+$ancho-box:800px;
+$blue: blue;
+$green: green;
+$vista:mobile;
+
+.box-uno {
+    background-color: $blue;
+    width: $ancho-box/2;
+    height: $alto-box;
+}
+
+.box-dos {
+    background-color: $green;
+    width: ($ancho-box/2)-100;
+    height: $alto-box;
+}
+
+.ejemplo {
+@if $vista == desktop {
+	@media only screen and (min-width:1024px){
+		h2{font-size:35px;}
+		}
+	} @else if $vista == mobile {
+		@media only screen and (max-width:767px){
+			h2{font-size:25px;}
+		}
+	} @else {
+		h2{font-size:20px;}
+	}
+}
+
+@for $i from 1 through 3 {
+    .caja-#{$i}{
+        width: 3em *$i;
+        background-color: black;
+        border: 1px solid red;
+        color: white;
+    }
+}
+
+@each $redes in instagram,facebook,twitter {
+    .#{$redes}-icono{
+        .#{$redes}-icono{
+            background-image: url("../imagenes/#{$redes}.png");
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+$estilos: (
+  color: #3673D9,
+  centro: center,
+  tFuente: 35px,
+  1rem : 1rem
+);
+
+.map {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, 1rem);
+  font-size:map-get($estilos, tFuente);
+ }
+
+ .redsocial {
+     border: 1px red solid;
+     background-color: #324e0e;
+ }
+ .redsocial--nueva {
+     @extend.redsocial;
+     font-size: 30px;
+ }
+
+ @mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .box {
+    @include sizes(500px, 50px);
+    background-color: aqua;
+ }
+ 

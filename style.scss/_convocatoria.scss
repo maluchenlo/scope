@@ -12,13 +12,13 @@
 .gridJurado {
     display: grid;
     grid-template-rows: 1fr 3fr;
-    grid-template-columns: repeat(5, 2fr);
+    grid-template-columns: repeat(4, 2fr);
     column-gap: 25px;
     padding: 10px 70px 70px 70px;
     background-color: rgb(238, 234, 234);
     grid-template-areas:
-        "tituloJurado tituloJurado tituloJurado tituloJurado tituloJurado"
-        "foto1        foto2        foto3        foto4        foto5";
+        "tituloJurado tituloJurado tituloJurado tituloJurado"
+        "foto1        foto2        foto3        foto4";
 }
 
 .gridJurado .tituloJurado {
@@ -39,8 +39,4 @@
 
 .gridJurado .foto4 {
     grid-area: foto4;
-}
-
-.gridJurado .foto5 {
-    grid-area: foto5;
 }

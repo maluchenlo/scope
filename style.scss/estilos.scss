@@ -2,7 +2,7 @@
 @import "inicio";
 @import "convocatoria";
 @import "programa";
-
+@import "sass-dos";
 
 .ilustracionMision {
     max-width: 60%;
@@ -67,8 +67,7 @@
             "foto1"
             "foto2"
             "foto3"
-            "foto4"
-            "foto5";
+            "foto4";
     }
 
 }
@@ -123,10 +122,10 @@
 
     .gridJurado {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "tituloJurado tituloJurado tituloJurado"
-            "foto1        foto2        foto3"
-            "foto4         foto5       foto5";
+            "tituloJurado tituloJurado"
+            "foto1        foto2"
+            "foto3        foto4";
     }
 }
