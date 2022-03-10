@@ -5,27 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO-->
   <meta name="description" content="Escríbenos y participa con tu proyecto cultural en Scope">
-  <meta name="keywords"  content="digital, cultura, mailchimp, zoom, asana, convocatoria, programa, educación, figma, miro">
+  <meta name="keywords"
+    content="digital, cultura, mailchimp, zoom, asana, convocatoria, programa, educación, figma, miro, contacto">
+  <!-- ANIMACIÓN-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- ÍCONOS-->
   <script src="https://kit.fontawesome.com/287cbbac06.js" crossorigin="anonymous"></script>
+  <!-- HOJA DE ESTILO-->
   <link rel="stylesheet" href="../estilos/estilos.css">
   <link rel="shortcut icon" href="./imagenes/Scope_flavicon.png" type="image/x-icon">
+  <!-- FUENTES-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   <title>Contacto</title>
 </head>
 
-<body class="ejemplo">
+<body>
   <!-- MENÚ -->
   <header class="menu">
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
         <div><a href="../index.html">
-          <img class="logo" src="../imagenes/logo_scope.png" alt="Scope">
-        </a></div>
+            <img class="logo" src="../imagenes/logo_scope.png" alt="Scope">
+          </a></div>
         <button class="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,7 +49,7 @@
               <a class="nav-link" href="convocatoria.html">Convocatoria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <div class="highlight"><a class="nav-link" href="contacto.html">Contacto</a></div>
             </li>
           </ul>
         </div>
@@ -57,90 +64,103 @@
       <h2>Contacto</h2>
     </div>
   </main>
-  <section class="texto">
-    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias architecto a doloribus totam harum consequatur praesentium, impedit voluptate culpa cum esse optio accusamus pariatur assumenda eveniet nostrum error autem et!</P>
+
+  <!-- GRID CONTACTO -->
+
+  <section class="contactGrid">
+    <!-- MAPA -->
+    <div class="mapa" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="280" data-aos-offset="0">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.13982158984!2d-3.819623861705214!3d40.437869755648876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1646682286683!5m2!1ses!2ses"
+        width="350" height="540" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!-- FORM -->
+    <div class="formularioContact" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="280"
+      data-aos-offset="0">
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="apellido">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1"></label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <!-- ILUSTRACIÓN -->
+      <div class="perrito" data-aos="fade-up" data-aos-duration="1000">
+        <img src="../imagenes/Contact-us.png" alt="">
+      </div>
   </section>
 
-
-<!-- Footer -->
-<footer class="bg-black text-center text-white">
+  <!-- FOOTER -->
+  <footer class="bg-black text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
       <!-- Section: Social media -->
       <section class="mb-4">
-        <!-- Facebook -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-        <!-- Twitter -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-        <!-- Google -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-        <!-- Instagram -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-        <!-- Linkedin -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-        <!-- Github -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
       </section>
-      <!-- Section: Social media -->
 
-      <!-- Section: Form -->
+      <!-- Section: newsletter -->
       <section class="">
         <form action="">
-          <!--Grid row-->
           <div class="row d-flex justify-content-center">
-            <!--Grid column-->
             <div class="col-auto">
               <p class="pt-2">
                 <strong>Date de alta en nuestra newsletter</strong>
               </p>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
             <div class="col-md-5 col-12">
-              <!-- Email input -->
               <div class="form-outline form-white mb-4">
                 <input type="email" id="form5Example21" class="form-control" />
               </div>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
             <div class="col-auto">
-              <!-- Submit button -->
               <button type="submit" class="btn btn-outline-light mb-4">
                 Enviar
               </button>
             </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
         </form>
       </section>
-      <!-- Section: Form -->
 
       <!-- Section: Text -->
       <section class="mb-4">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-          eum harum corrupti dicta, aliquam sequi voluptate quas.
+          Puedes seguirnos en nuestras redes o darte de alta para recibir todas las novedades. Para contactar con
+          nosotros escríbenos a info (at) scope.es
         </p>
       </section>
     </div>
-    <!-- Grid container -->
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       <p> © 2022 Scope </p>
-      <a class="text-white" href="https://mdbootstrap.com/">Política de Privacidad</a>
+      <a class="text-white" href="#!">Política de Privacidad</a>
     </div>
-    <!-- Copyright -->
+
+    <!-- animación -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">

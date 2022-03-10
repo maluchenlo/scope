@@ -12,15 +12,21 @@ img {
   max-width: 100%;
 }
 
-.menu {
-  padding-left: 70px;
+.logo {
+  padding-left: 60px;
+  padding-right: 70px;
 }
 
 nav li {
-  padding: 20px;
-  margin-top: 25px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  padding: 30px;
+}
+
+nav ul a:hover {
+  background-color: #eeeaea;
+}
+
+.highlight {
+  background-color: #eeeaea;
 }
 
 h2 {
@@ -31,12 +37,12 @@ h2 {
 
 .titulo {
   background-color: #eeeaea;
-  padding: 70px 70px 10px 70px;
+  padding: 100px 70px 10px 70px;
 }
 
 .texto {
   background-color: #eeeaea;
-  padding: 10px 70px 50px 70px;
+  padding: 10px 70px 30px 70px;
 }
 
 h3 {
@@ -44,53 +50,12 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   font-weight: lighter;
-}
-
-.tituloIntro {
-  background-color: #eeeaea;
-  padding: 70px 50px 0px 70px;
-}
-
-.textoIntro {
-  background-color: #eeeaea;
-  padding: 0px 50px 70px 70px;
-}
-
-.ilustracionIntro {
-  background-color: #eeeaea;
-  padding: 70px 70px 70px 50px;
-}
-
-.gridAreas {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "tituloIntro      ilustracionIntro" "textoIntro       ilustracionIntro";
-}
-
-.gridAreas .tituloIntro {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: tituloIntro;
-}
-
-.gridAreas .textoIntro {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: textoIntro;
-}
-
-.gridAreas .ilustracionIntro {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: ilustracionIntro;
+  line-height: 35px;
 }
 
 .banner {
   background-color: #6536FD;
-  padding: 50px;
+  padding: 70px;
 }
 
 #bannerTexto {
@@ -101,10 +66,11 @@ h3 {
 
 .boton {
   background-color: white;
-  border: 1px solid black;
-  padding: 10px 20px;
+  border: 2px solid black;
+  padding: 10px 20px 10px 20px;
   text-align: center;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .boton:hover {
@@ -141,6 +107,37 @@ h3 {
   padding-right: 20px;
 }
 
+.gridAreas {
+  display: -ms-grid;
+  display: grid;
+  background-color: #eeeaea;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "tituloIntro      ilustracionIntro" "textoIntro       ilustracionIntro";
+}
+
+.gridAreas .tituloIntro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tituloIntro;
+  padding: 100px 50px 0px 70px;
+}
+
+.gridAreas .textoIntro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: textoIntro;
+  padding: 0px 50px 70px 70px;
+}
+
+.gridAreas .ilustracionIntro {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: ilustracionIntro;
+  padding: 90px 70px 120px 50px;
+}
+
 .gridJurado h4 p {
   line-height: 16px;
 }
@@ -162,7 +159,7 @@ h3 {
       grid-template-columns: repeat(4, 2fr);
   -webkit-column-gap: 25px;
           column-gap: 25px;
-  padding: 10px 70px 70px 70px;
+  padding: 70px 70px 70px 70px;
   background-color: #eeeaea;
       grid-template-areas: "tituloJurado tituloJurado tituloJurado tituloJurado" "foto1        foto2        foto3        foto4";
 }
@@ -213,7 +210,7 @@ h4 {
       grid-template-columns: repeat(3, 2fr);
   -webkit-column-gap: 20px;
           column-gap: 20px;
-  padding: 10px 70px 70px 70px;
+  padding: 10px 70px 100px 70px;
   background-color: #eeeaea;
       grid-template-areas: "foto1            foto2            foto3";
 }
@@ -234,6 +231,223 @@ h4 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: foto3;
+}
+
+.contactGrid {
+  padding: 40px 70px 100px 70px;
+  background-color: #eeeaea;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-row: 2fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+      grid-template-areas: "mapa formularioContact" "mapa perrito";
+}
+
+.contactGrid .mapa {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: mapa;
+}
+
+.contactGrid .formularioContact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: formularioContact;
+}
+
+.contactGrid .perrito {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: perrito;
+}
+
+.perrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 576px) {
+  nav li {
+    padding: 0px;
+    margin: 0px;
+  }
+  .ilustracionMision {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .gridAreas {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "tituloIntro" "textoIntro" "ilustracionIntro";
+  }
+  .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .boton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gridGaleria {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "foto1" "foto2" "foto3";
+  }
+  .gridJurado {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "tituloJurado" "foto1" "foto2" "foto3" "foto4";
+  }
+  .contactGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "formularioContact" "perrito";
+  }
+  .mapa {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  nav li {
+    padding: 0px;
+    margin: 0px;
+  }
+  .ilustracionMision {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .gridAreas {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "tituloIntro" "textoIntro" "ilustracionIntro";
+  }
+  .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .boton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gridGaleria {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "foto1" "foto2" "foto3";
+  }
+  .gridJurado {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "tituloJurado tituloJurado" "foto1        foto2" "foto3        foto4";
+  }
+  .contactGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "formularioContact" "perrito";
+  }
+  .mapa {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .gridAreas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "tituloIntro      ilustracionIntro" "textoIntro       ilustracionIntro";
+  }
+  .gridGaleria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2fr)[3];
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-areas: "foto1            foto2            foto3";
+  }
+  .gridJurado {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 3fr;
+        grid-template-rows: 1fr 3fr;
+    -ms-grid-columns: (2fr)[4];
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-areas: "tituloJurado tituloJurado tituloJurado tituloJurado" "foto1        foto2        foto3        foto4";
+  }
+  .contactGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    grid-row: 2fr 1fr;
+        grid-template-areas: "mapa formularioContact" "mapa perrito";
+  }
+  .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .box-uno {
@@ -316,123 +530,7 @@ h4 {
 }
 
 .ilustracionMision {
-  max-width: 60%;
   margin-top: 30px;
-}
-
-@media screen and (max-width: 576px) {
-  nav li {
-    padding: 0px;
-    margin: 0px;
-  }
-  .ilustracionIntro {
-    padding: 0px 70px 70px 70px;
-  }
-  .ilustracionMision {
-    max-width: 100%;
-    margin-top: 30px;
-  }
-  .gridAreas {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "tituloIntro" "textoIntro" "ilustracionIntro";
-  }
-  .ilustracionIntro {
-    margin-top: 0px;
-  }
-  .logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .boton {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .gridGaleria {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "foto1" "foto2" "foto3";
-  }
-  .gridJurado {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "tituloJurado" "foto1" "foto2" "foto3" "foto4";
-  }
-}
-
-@media screen and (min-width: 577px) and (max-width: 800px) {
-  nav li {
-    padding: 0px;
-    margin: 0px;
-  }
-  .ilustracionIntro {
-    padding: 0px 70px 70px 70px;
-  }
-  .ilustracionMision {
-    max-width: 100%;
-    margin-top: 30px;
-  }
-  .gridAreas {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "tituloIntro" "textoIntro" "ilustracionIntro";
-  }
-  .ilustracionIntro {
-    margin-top: 0px;
-  }
-  .logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .boton {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .gridGaleria {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "foto1" "foto2" "foto3";
-  }
-  .gridJurado {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "tituloJurado tituloJurado" "foto1        foto2" "foto3        foto4";
-  }
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=estilos.css.map */
